@@ -1,0 +1,25 @@
+.product-container{
+    width: 25vw;
+    height: 20vh;
+    background-color: #D34735;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    position: relative;
+    top: 10vh;
+    left: 15vw;
+}
+
+.image{
+    width: 17vh;
+    height: 13vh;
+    float: left;
+    margin-left: 2vh;
+}
+
+.product-name, .price{
+    margin-left:2vh;
+}

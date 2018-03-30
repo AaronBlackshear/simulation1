@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.container{
+  width: 70vw;
+  height: 100%;
+  background-color: grey;
+}

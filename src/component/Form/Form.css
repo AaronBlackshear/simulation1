@@ -1,0 +1,19 @@
+.box{
+    position: absolute;
+    right: 15vw;
+    top: 10vh;
+    margin-top: 10vh;
+}
+
+.container{
+    width: 20vw;
+    height: 45vh;
+    background-color: #3ad886;
+    border-radius: 5px;
+}
+
+.img-placeholder{
+    width: 15vw;
+    height: 10vw;
+    background-size: contain;
+}
