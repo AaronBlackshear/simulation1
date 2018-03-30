@@ -4,6 +4,7 @@ import axios from 'axios';
 import Dashboard from './component/Dashboard/Dashboard';
 import Form from './component/Form/Form';
 import Header from './component/Header/Header';
+// import { Route,Link,Switch } from 'react-router-dom';
 
 class App extends Component {
   constructor(){
@@ -44,6 +45,14 @@ class App extends Component {
 
     return (
       <div className="App">
+          {/* <Switch>
+            <Route exact path='/' component={Header}>
+              <Switch>
+              <Route path='/Form' component={Form}>Form</Route>
+              <Route path='/Dashboard' component={Dashboard}>Dashboard</Route>
+              </Switch>
+            </Route>
+          </Switch> */}
         <Header />
         <Form component={this.getProducts} current={currentProduct} />
         <Dashboard productList={products} component={this.getProducts} toggleEdit={this.toggleEdit} edit={this.editProduct} />

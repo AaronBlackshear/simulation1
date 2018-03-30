@@ -21,7 +21,7 @@ export default class Form extends Component{
     }
 
     componentDidUpdate(obj){
-        if(obj == this.props.current){
+        if(obj === this.props.current){
             this.checkEdit()
         }
     }
@@ -92,8 +92,8 @@ export default class Form extends Component{
                 <h4>Price:</h4>
                 <input value={price} onChange={e => this.addPrice(e.target.value)} />
                 <br />
-                <button onClick={() => this.clearForm()}>Cancel</button>
-                <button onClick={() => {this.addProduct(imageUrl,productName,price), this.clearForm()}}>Add to inventory</button>
+                <button className='cancel' onClick={() => this.clearForm()}>Cancel</button>
+                <button className='add' onClick={() => {this.addProduct(imageUrl,productName,price), this.clearForm()}}>Add to inventory</button>
                 {/* <button onClick={() => {this.editProduct(imageUrl,productName,price), this.clearForm() }}>SaveChanges</button> */}
             </div>
             </div>

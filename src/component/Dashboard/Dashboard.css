@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     border: 1px solid black;
     margin-bottom: 2vh;
     border-radius: 5px;
@@ -22,4 +23,24 @@
 
 .product-name, .price{
     margin-left:2vh;
+}
+
+.edit{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 8px;
+    background-color: #3ad886;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.deleteBtn{
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    padding: 5px 8px;
+    background-color: #3ad886;
+    border-style: none;
+    border-radius: 3px;
 }

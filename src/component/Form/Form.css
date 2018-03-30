@@ -17,3 +17,22 @@
     height: 10vw;
     background-size: contain;
 }
+
+.add, .cancel{
+    padding: 5px 8px;
+    background-color: #D34735;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.add{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.cancel{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}

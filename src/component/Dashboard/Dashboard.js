@@ -26,7 +26,7 @@ export default class Dashboard extends Component{
         let products = productList.map((cur,ind) => {
             return (<div key={cur.id} className='product-container'> <img className='image' src={cur.image_url || 'http://www.pixedelic.com/themes/geode/demo/wp-content/uploads/sites/4/2014/04/placeholder2.png'} />
             <h5 className='product-name'>{cur.product_name}</h5> <br/> <p className='price'>${cur.price}</p>
-            <button onClick={() => {toggleEdit(cur), edit(cur)}}>Edit</button> <button onClick={() => this.deleteProduct(cur.id)}>Delete</button> </div>)
+            <button className='edit' onClick={() => {toggleEdit(cur), edit(cur)}}>Edit</button> <button className='deleteBtn' onClick={() => this.deleteProduct(cur.id)}>Delete</button> </div>)
         })
         return (
             <div>
